@@ -5,10 +5,10 @@ import java.util.Map;
 
 public class Kata2 {
     public static void main(String[] args) {
-        Integer[] data = {1,2,3,5,6,1,3,2,2,3,4,5,1,3,6};
+       String[] data = {"Rosa","Margarita","Petunia","Rosa","Calendula","Petunia","Rosa","Rosa","Margarita"};
         Histogram histo = new Histogram(data);
-        Map<Integer,Integer> histogr = histo.getHistogram();
-        for (Map.Entry<Integer,Integer> entry : histogr.entrySet()) {
+        Map<String,Integer> histogr = histo.getHistogram();
+        for (Map.Entry<String,Integer> entry : histogr.entrySet()) {
             System.out.println(entry.getKey()+ "==>" + entry.getValue());
         }
     }
